@@ -21,3 +21,17 @@ console.log(typeof input)
 console.log(typeof flag)
 console.log(typeof arr)
 console.log(typeof obj)
+
+// Activity 4: Reassigning Variables
+let reAssign = 23
+console.log(reAssign)
+
+reAssign = "Ankan"
+console.log(reAssign)
+
+// Activity 5: Understanding const
+const reConst = 55
+console.log(reConst)
+
+// reConst = "1"
+// console.log(reConst)
