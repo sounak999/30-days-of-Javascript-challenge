@@ -22,3 +22,39 @@ const newList = document.createElement('li')
 let textNode = document.createTextNode('New item 3 added')
 newList.appendChild(textNode)
 ul.appendChild(newList)
+
+// Activity 3: Removing Elements
+
+// Task 5: Select an HTML element and remove it from the DOM.
+document.getElementById('temporary-text').remove();
+
+// Task 6: Remove the last child of a specific HTML element.
+document.getElementById('removable-list').lastElementChild.remove()
+
+
+// Activity 4: Modifying Attributes and Classes
+
+// Task 7: Select an HTML element and change one of its attributes (e.g., src of an img tag).
+document.getElementsByTagName('img')[0].src = 'https://fastly.picsum.photos/id/121/200/300.jpg?hmac=2fXySXN_YXZfcWVqSvYNuH7podc4E9cEj89RqtBW238'
+
+// Task 8: Add and remove a CSS class to/from an HTML element.
+const classChangeElement = document.getElementById('class-change');
+
+classChangeElement.classList.add('highlight');
+// classChangeElement.classList.remove('highlight');
+
+
+// Activity 5: Event Handling
+
+// Task 9: Add a click event listener to a button that changes the text content of a paragraph.
+const para = document.getElementById('interactive-paragraph')
+document.getElementById('action-button').addEventListener('click', () => para.textContent = 'This content comes with the click!')
+
+// Task 10: Add a mouseover event listener to an element that changes its border color.
+para.addEventListener('mouseover', () => {
+    para.classList.add('hovered')
+})
+
+para.addEventListener('mouseout', () => {
+    para.classList.remove('hovered')
+})
