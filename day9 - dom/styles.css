@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#manipulate, #create-append, #remove, #modify, #events {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+#interactive-paragraph {
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+#interactive-paragraph.hovered {
+    border-color: blue;
+}
